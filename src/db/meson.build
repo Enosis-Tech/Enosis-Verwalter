@@ -5,19 +5,13 @@
 # *** License: AGPL-3-or-later   ***
 # **********************************
 
-# ***************
-# *** C Files ***
-# ***************
-
-C_FILES_DB = files(
-				'add.c',
-				'delete.c'
-			)
-
 # *****************
 # *** CPP Files ***
 # *****************
 
 CPP_FILES_DB = files(
-					'consult.cpp'
+					'io/delete.cpp',
+					'input/read.cpp',
+					'output/add.cpp',
+					'create_table.cpp'
 				)

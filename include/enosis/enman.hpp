@@ -5,53 +5,33 @@
 // *** License: AGPL-3-or-later   ***
 // **********************************
 
-#ifndef ENOSIS_ENMAN_H
-#define ENOSIS_ENMAN_H
-
-#ifdef _cpluplus
-extern "C" {
-#endif
-
-// ****************************
-// *** Standard C Libraries ***
-// ****************************
-
-#ifndef _cplusplus
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include <stddef.h>
-#include <stdint.h>
-#include <string.h>
-#include <stdbool.h>
-#endif
+#ifndef ENOSIS_ENMAN_HPP
+#define ENOSIS_ENMAN_HPP
 
 // ******************************
 // *** Standard C++ Libraries ***
 // ******************************
 
-#ifdef _cplusplus
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 #include <cstddef>
 #include <cstdint>
 #include <cstring>
-#endif
 
-// *************************
-// *** Common Structures ***
-// *************************
+// ************************
+// *** SQLite Libraries ***
+// ************************
 
-// ***************************
-// *** Common C Structures ***
-// ***************************
+#include <sqlite/sqlite3.h>
 
-// *************************
-// *** Common C++ Clases ***
-// *************************
+// ******************
+// *** Data Types ***
+// ******************
 
-#ifdef _cpluplus
+// **************
+// *** Clases ***
+// **************
 
 class window_man {
 
@@ -83,29 +63,40 @@ class window_man {
 		void     set_height(uint32_t);
 		uint32_t get_height(void);
 
-}
+};
 
-#endif
-
-// ************************
-// *** Common Functions ***
-// ************************
+// **********************
+// *** Main Functions ***
+// **********************
 
 void enman_init();
 bool enman_loop();
 void enman_free();
 void enman_main(void (enman_init)(), void (enman_loop)(), void (enman_free)());
 
-// **************************
-// *** Common C Functions ***
-// **************************
+// ************************
+// *** Create Functions ***
+// ************************
 
-// ****************************
-// *** Common C++ Functions ***
-// ****************************
+void enman_create_database(const char*);
+void enman_create_table(const char*);
 
-#ifdef _cpluplus
-}
-#endif
+// ************************
+// *** Output Functions ***
+// ************************
 
-#endif // ENOSIS_ENMAN_H
+void enman_add();
+
+// **********************
+// *** Input Funcions ***
+// **********************
+
+void enman_read();
+
+// ********************
+// *** IO Functions ***
+// ********************
+
+void enman_delete();
+
+#endif // ENOSIS_ENMAN_HPP

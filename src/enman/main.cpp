@@ -15,7 +15,7 @@
 // *** Enosis Libraries ***
 // ************************
 
-#include <Enosis/enman.h>
+#include <enosis/enman.hpp>
 
 // *******************
 // *** Entry Point ***

@@ -10,5 +10,5 @@
 // ***************************
 
 bool enman_loop() {
-	
+	return true;
 }

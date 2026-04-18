@@ -1,6 +1,6 @@
 project(
 	'Enosis Manager',
-	'c', 'cpp',
+	'cpp',
 	version: '0.1.0',
 	meson_version: '>=1.9.0',
 	license: 'AGPL-3-or-later',
@@ -18,7 +18,7 @@ project(
 # *** Directories ***
 # *******************
 
-search_inc = include_directories('include', 'include/sqlite', 'include/Enosis')
+search_inc = include_directories('include', 'include/sqlite', 'include/enosis')
 
 # ********************
 # *** Dependencies ***
@@ -31,7 +31,7 @@ SQLITE3_DEP = dependency('sqlite3', static: true)
 # *** Files ***
 # *************
 
-subdir('src/database')
+subdir('src/db')
 subdir('src/enman')
 subdir('src/gui')
 
@@ -42,7 +42,7 @@ subdir('src/gui')
 library_shared_enman_db  = shared_library(
 								'enmandb',
 								
-								[ C_FILES_DB, CPP_FILES_DB ],
+								CPP_FILES_DB,
 
 								include_directories: search_inc,
 								
