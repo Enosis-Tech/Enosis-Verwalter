@@ -1,0 +1,18 @@
+[constants]
+
+PREFIX = ''
+
+[binaries]
+
+c   = 'gcc'
+cpp = 'g++'
+
+c_ld   = 'bfd'
+cpp_ld = 'bfd'
+
+strip = 'strip'
+
+[built-in options]
+
+c_std   = 'gnu99'
+cpp_std = 'gnu++20'

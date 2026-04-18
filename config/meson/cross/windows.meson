@@ -1,0 +1,18 @@
+[constants]
+
+PREFIX = 'x86_64-w64-mingw32-'
+
+[binaries]
+
+c   = PREFIX + 'gcc'
+cpp = PREFIX + 'g++'
+
+c_ld   = 'bfd'
+cpp_ld = 'bfd'
+
+strip = PREFIX + 'strip'
+
+[built-in options]
+
+c_std   = 'gnu99'
+cpp_std = 'gnu++20'
