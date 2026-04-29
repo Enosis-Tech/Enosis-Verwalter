@@ -9,9 +9,12 @@
 # *** CPP Files ***
 # *****************
 
-CPP_FILES_DB = files(
-					'io/delete.cpp',
-					'input/read.cpp',
-					'output/add.cpp',
-					'create_table.cpp'
-				)
+DATEL_ENUI_XLIB_C = files(
+	'xlib/fenster.c',
+	'xlib/schaltfläche.c'
+)
+
+DATEL_ENUI_WAYLAND_C = files(
+	'wayland/fenster.c',
+	'wayland/schaltfläche.c'
+)

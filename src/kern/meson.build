@@ -9,7 +9,10 @@
 # *** CPP Files ***
 # *****************
 
-CPP_FILES_GUI = files(
-					'window.cpp',
-					'buttom.cpp'
-				)
+DATEL_KERN_CPP = files(
+	'aktualisieren.cpp',
+	'enver.cpp',
+	'freigeben.cpp',
+	'hauptfunktion.cpp',
+	'initialiseren.cpp'
+)

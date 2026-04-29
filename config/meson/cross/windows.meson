@@ -16,3 +16,10 @@ strip = PREFIX + 'strip'
 
 c_std   = 'gnu99'
 cpp_std = 'gnu++20'
+
+[host_machine]
+
+system = 'Windows'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

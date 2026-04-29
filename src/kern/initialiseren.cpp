@@ -5,10 +5,16 @@
 // *** License: AGPL-3-or-later   ***
 // **********************************
 
+// ********************
+// *** Bibliothecas ***
+// ********************
+
+#include <cstdio>
+
 // ***************************
 // *** Function Definition ***
 // ***************************
 
-void enman_init() {
-	
+void enver_initialiseren(int argc, char** argv) {
+
 }

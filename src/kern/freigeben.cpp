@@ -9,6 +9,6 @@
 // *** Function Definition ***
 // ***************************
 
-void enman_free() {
+void enver_freigeben() {
 	
 }

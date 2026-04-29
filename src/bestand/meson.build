@@ -9,9 +9,10 @@
 # *** CPP Files ***
 # *****************
 
-CPP_FILES_ENMAN = files(
-					'main.cpp',
-					'init.cpp',
-					'loop.cpp',
-					'free.cpp'
-				)
+DATEL_BESTAND_CPP = files(
+	'ausgabe/hinzufuegen.cpp',
+	'ea/loeschen.cpp',
+	'eingabe/lesen.cpp',
+	'erstellen_datenbank.cpp',
+	'erstellen_tabelle.cpp'
+)

@@ -9,13 +9,13 @@
 // *** Enosis Technology Libraries ***
 // ***********************************
 
-#include <enosis/enman.hpp>
+#include <enver/enver.hpp>
 
 // ****************
 // *** Function ***
 // ****************
 
-void enman_add(const char* command) {
+void enver_lesen() {
 
 	
 

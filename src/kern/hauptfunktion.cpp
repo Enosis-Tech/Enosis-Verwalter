@@ -15,19 +15,19 @@
 // *** Enosis Libraries ***
 // ************************
 
-#include <enosis/enman.hpp>
+#include <enver/enver.hpp>
 
 // *******************
 // *** Entry Point ***
 // *******************
 
-int main(void) {
+void enver_hauptfunktion(int argc, char** argv) {
 
-	enman_init();
+	enver_initia(argc, argv);
 	
-	while(enman_loop() == true);
+	while(enver_renova() == true);
 
-	enman_free();
+	enver_libera();
 
 	return EXIT_SUCCESS;
 }

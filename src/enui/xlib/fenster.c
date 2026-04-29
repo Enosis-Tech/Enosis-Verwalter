@@ -5,10 +5,9 @@
 // *** License: AGPL-3-or-later   ***
 // **********************************
 
-// ***************************
-// *** Function Definition ***
-// ***************************
+// ********************
+// *** Bibliothecas ***
+// ********************
 
-bool enman_loop() {
-	return true;
-}
+#define XLIB true
+#include <enui/enui.h>
